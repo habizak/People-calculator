@@ -1,6 +1,6 @@
 // 📌 Get references to the HTML elements
 let countEl = document.getElementById("countNum"); // The number displayed in the counter
-let saveEl = document.getElementById("historyCount"); // The saved total count
+let saveEl = document.getElementById("totalCount"); // The saved total count
 let count = 0; // Initialize the count to 0
 
 // 📌 Function to decrease the counter (but not below 0)
@@ -25,4 +25,8 @@ function save() {
   saveEl.innerText = newTotal; // Update the displayed total count in history
   count = 0; // Reset the counter after saving
   countEl.innerText = count; // Reset the displayed counter
+}
+
+function reset() {
+  saveEl.innerText = "0";
 }

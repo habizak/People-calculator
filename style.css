@@ -44,7 +44,7 @@ p {
   margin-top: 16px; 
 }
 
-.num-history {
+.total-history {
   font-size: 40px;
   margin: 0;
   line-height: 1.3;
@@ -88,4 +88,18 @@ p {
 .btn-save:hover {
   background-color: #DCFF8B;
   outline: none;
+}
+
+.btn-reset {
+  padding: 16px 0;
+  width: 100%;
+  border: 2px solid #B2FF00;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f8f8f8;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 16px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
