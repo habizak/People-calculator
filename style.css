@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.logo {
+  height: 55px;
+  width: 122px;
+}
+
+.peopl {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  min-height: 724px;
+  margin: 40px auto;
+  padding: 16px 40px 32px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.history {
+  text-align: center;
+  margin-top: 16px; 
+}
+
+.num-history {
+  font-size: 40px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.btn-operation {
+  background-color: transparent;
+  min-width: 72px;
+  aspect-ratio: 1/1;
+  border: #f8f8f8 solid 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  max-width: 50%;
+  height: auto;
+}
+
+.counter {
+  color: #B2FF00;
+  font-size: clamp(48px, 10vw, 168px);
+  text-align: center;
+  margin: auto;
+}
+
+.btn-save {
+  padding: 16px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #B2FF00;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-save:hover, .btn-save:focus {
+  background-color: #DCFF8B;
+  outline: none;
+}
