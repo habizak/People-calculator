@@ -85,7 +85,7 @@ p {
   cursor: pointer;
 }
 
-.btn-save:hover, .btn-save:focus {
+.btn-save:hover {
   background-color: #DCFF8B;
   outline: none;
 }
