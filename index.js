@@ -7,26 +7,27 @@ let count = 0; // Initialize the count to 0
 function decrease() {
   if (count > 0) { // Only decrease if count is greater than 0
     count -= 1; // Subtract 1 from count
-    countEl.innerText = count; // Update the displayed count
+    countEl.textContent = `${count}`; // Update the displayed count
   }
 }
 
 // 📌 Function to increase the counter
 function increment() {
   count += 1; // Add 1 to count
-  countEl.innerText = count; // Update the displayed count
+  countEl.textContent = `${count}`; // Update the displayed count
 }
 
 // 📌 Function to save the current count to history
 function save() {
-  let previousCount = parseInt(saveEl.innerText) || 0; // Get the previous saved number (default to 0 if empty)
+  let previousCount = parseInt(saveEl.textContent) || 0; // Get the previous saved number (default to 0 if empty)
   let newTotal = previousCount + count; // Add current count to the previous saved total
 
-  saveEl.innerText = newTotal; // Update the displayed total count in history
+  saveEl.textContent = newTotal; // Update the displayed total count in history
   count = 0; // Reset the counter after saving
-  countEl.innerText = count; // Reset the displayed counter
+  countEl.textContent = `${count}`; // Reset the displayed counter
 }
 
-function reset() {
-  saveEl.innerText = "0";
+// 📌 Function to save reset total people
+function reset() {  
+  saveEl.textContent = "0"; // Reset the total people counter
 }

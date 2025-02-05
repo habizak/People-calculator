@@ -103,3 +103,8 @@ p {
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.btn-reset:hover {
+  background-color: #DCFF8B;
+  color: black;
+}
